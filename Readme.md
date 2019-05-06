@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Olga Chambers](https://up.htmlacademy.ru/htmlcss/25/user/1007647).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Вечканов] (https://up.htmlacademy.ru/htmlcss/25/user/902303).
 
 ---
 
