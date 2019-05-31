@@ -7,7 +7,13 @@ body {
   list-style: none;
   height: 26px;
   width: 1200px;
+  	-webkit-box-shadow: 0px 5px 15 0px rgba(0, 0, 1, 0.2);
+	        box-shadow: 0px 5px 15px 0px rgba(0, 0, 1, 0.2); 
+	width: 1200px;
+	min-height: 3000px;
+	margin: 0 auto;
 }
+
 
 .main-navigation{
 	display:flex;
@@ -531,6 +537,7 @@ background-color: #8d796d;
 
 .social-button a{
 	text-align: center;
+	padding-left: 6px;
 }
 
 .social-button:hover,
@@ -836,7 +843,6 @@ input[type="checkbox"]:focus + label {
 	fill: #81b3d2;
 }
 
-
 .house-title{
 	font-size: 21px;
 	color: black;
@@ -857,17 +863,21 @@ input[type="checkbox"]:focus + label {
 	
 }
 
-.catalog-list .button{
-	font: inherit;
-	background-color: #766357;
-	font-weight:bold;
+.button-reservation:hover,
+.button-reservation:focus,
+.button-reservation:active{
+	background-color: #887e78;
 }
 
-.catalog-list .button:hover,
-.catalog-list .button:focus,
-.catalog-list .button:active{
-	background-color: #81b3d2;
+
+.button-info:hover,
+.button-info:focus,
+.button-info:active{
+	background-color: #669ec0;
+	box-sizing: border-box;
 }
+
+
 
 .button-info{
 	font: inherit;
