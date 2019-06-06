@@ -25,7 +25,7 @@
 		  </li>
           <li class='main-header-logo'>
 		    <a class='main-header-logo' href='index.html'>
-		      <img src='svg/logo-sedona.svg'  alt='Logo for project Sedona'>
+		      <img class='svg_logo_sedona' src='svg/logo-sedona.svg'  alt='Logo for project Sedona'>
 			</a>
 		  </li>
 		  <li class='nav-item4'>
@@ -79,7 +79,7 @@
         <h2 class='visually-hidden'>
 		  Услуги Седоны
 		</h2>
-        <ul class='service-content'>
+        <ul class='service-content-1'>
           <li class='service-item-1'>
             <img src='svg/icon-1.svg' height='72px' alt='Жилье'>
             <p class='item-title'>
@@ -129,7 +129,7 @@
 		</div>
       </div>
 	  
-      <section class='info-345'>
+      <section class='service-content-2'>
         <h2 class='visually-hidden'>
 		  Информация о Седоне
 		</h2>
@@ -178,13 +178,13 @@
 		    Укажите предполагаемые даты поездки <br> и мы покажем вам лучшие предложения гостиниц в Седоне
 		  </div> 
 		</div>
-		<button class='search-data-button'>
+		<button class='search-data-button js-open-modal' id='button-search-sedona'>
 		    Поиск гостинницы в Седоне
 		</button>
       </section>
 	</main> 
 	
-    <section class='reservation-block'> 
+    <div class='modal-block'> 
       <form action='https://echo.htmlacademy.ru' method='post'>
         <div class='departure-block'>
 		  <label class='departure-label' for='departure-in'>
@@ -280,17 +280,18 @@
 		  </div>
         </div>		
         <div >	
-          <button class='search-button-index' type='submit'>
+          <button class='search-button-index js-close-modal' type='submit'>
             найти
           </button>
         </div>	
       </form>
-    </section>
+    </div>
 	
 	<section class='map'>
       <img class='map_img' src='img/map.jpg' alt='Седона на карте'>
     </section>
-	<footer class='footer-contacts footer-margin'>
+	
+	<footer class='footer-contacts'>
 	  <div class='contacts'>
         <div class='footer-block-tag'>
           <p class='footer-tag'>
@@ -332,9 +333,9 @@
 		  </div>	 
         </div>	
         <div class='footer-block-copyrite'> 
-          <div class='footer-text-1'>
+          <span class='footer-text-1'>
 		    website by 
-	      </div>
+	      </span>
 		  <div class='footer-text-2'>
 		    <span class='visually-hidden'>
 			  logo-html-academy
@@ -351,6 +352,17 @@
 	    </div>
 	  </div> 
     </footer>
+	
+	<script>
+	
+	var popup=document.querySelector('.modal-block');
+	var button_open=document.querySelector('.search-data-button');
+	
+	  button_open.addEventListener("click", function(evt) {
+	  evt.preventDefault();
+	  popup.classList.toggle('js-modal-show');
+      });
+	//</script>
   </body>
 </html>
 
