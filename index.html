@@ -6,7 +6,7 @@
     <title>HTML Academy: Sedona
 	</title>
 	<link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
@@ -48,7 +48,7 @@
 	  <h1 class='visually-hidden'>
 	    HTML Sedona
 	  </h1>
-      <div>
+      <div class='block-description'>
         <p class='container-title'>
 		  Седона — небольшой городок в Аризоне, <br> заслуживающий большего!
 		</p>
@@ -61,9 +61,9 @@
 		  <h3 class='visually-hidden'>
 		    Изображение города
 		  </h3>
-		  <img class='img_hotel_photo' src='img/hotel-photo.jpg' class='service-picture-1' alt='sedona promo'>
+		  <img class='img_hotel_photo service-picture-1' src='img/hotel-photo.jpg' alt='sedona promo'>
 		</div>
-        <div class='service-block-1'>
+        <div class='service-block'>
 	      <p class='picture-title'>
 		    Настоящий <br> городок
 		  </p> 
@@ -81,16 +81,16 @@
 		</h2>
         <ul class='service-content-1'>
           <li class='service-item-1'>
-            <img src='svg/icon-1.svg' height='72px' alt='Жилье'>
+            <img src='svg/icon-1.svg' height='72' alt='Жилье'>
             <p class='item-title'>
               Жилье
-            </p class='service-article-1'>
-            <p>
+			</p>
+            <p class='service-article-1'>
               Рекомендуем пожить в настоящем <br> мотеле, все как вкино!
             </p>
           </li>
           <li class='service-item-2'>
-            <img src='svg/icon-3.svg' height='72px' alt='Еда'>
+            <img src='svg/icon-3.svg' height='72' alt='Еда'>
             <p class='item-title'>
               Еда
             </p>
@@ -99,7 +99,7 @@
             </p>
           </li>
           <li class='service-item-3'>
-            <img src='svg/icon-2.svg' height='78px' alt='Сувениры'>
+            <img src='svg/icon-2.svg' height='78' alt='Сувениры'>
             <p class='item-title'>
               Сувениры
             </p>
@@ -116,7 +116,7 @@
 	      </h3>
           <img class='img_devil_photo' src='img/devil-photo.jpg' alt='sedona promo'>
 		</div>
-        <div class='service-block-1'>
+        <div class='service-block'>
 		  <p class='picture-title'>
 		    Там есть <br> Мост Дьявола 
 		  </p>
@@ -244,7 +244,7 @@
 				<button class='button-minus' type='button'>
 				  -
 				</button>
-				<input class='people-input' type='search-text' name='adult' id='adult' value='2' placeholder='2'>
+				<input class='people-input' type='text' name='adult' id='adult' value='2' placeholder='2'>
 				<span class='visually-hidden'>
 				  плюс
 				</span>
@@ -257,7 +257,7 @@
 		  <div class='child-block'>
             <div class='wrapper-people-2'>
 			  <div class='child-label'>
-		        <label class='children-label' for='adult'>
+		        <label class='children-label' for='child'>
 			      Дети:
 			    </label>
 			  </div>
@@ -268,7 +268,7 @@
 				<button class='button-minus' type='button'>
 				  -
 				</button>
-				<input class='people-input' type='search-text' name='adult' id='adult' value='0' placeholder='0'>
+				<input class='people-input' type='text' name='child' id='child' value='0' placeholder='0'>
 				<span class='visually-hidden'>
 				  плюс
 				</span>
@@ -288,7 +288,16 @@
     </div>
 	
 	<section class='map'>
-      <img class='map_img' src='img/map.jpg' alt='Седона на карте'>
+	  <h3 class='visually-hidden'>
+	    Седона на карте
+	  </h3>
+	  <iframe 
+	    class='map_iframe'
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592671.975170088!2d-112.1175004224166!3d34.854085600806435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2ssi!4v1559896564362!5m2!1sen!2ssi" 
+		height='593'
+		width='1200'
+		allowfullscreen>
+	  </iframe>
     </section>
 	
 	<footer class='footer-contacts'>
@@ -352,17 +361,8 @@
 	    </div>
 	  </div> 
     </footer>
-	
-	<script>
-	
-	var popup=document.querySelector('.modal-block');
-	var button_open=document.querySelector('.search-data-button');
-	
-	  button_open.addEventListener("click", function(evt) {
-	  evt.preventDefault();
-	  popup.classList.toggle('js-modal-show');
-      });
-	//</script>
+	<script type="text/javascript" src="js/script.min.js">
+	</script>
   </body>
 </html>
 
