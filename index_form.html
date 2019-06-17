@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <title>HTML Academy: Sedona </title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 
@@ -22,7 +22,8 @@
                 <li class='nav-item5'> <a href='./catalog.html'>Гостинницы</a> </li>
             </ul>
         </nav>
-        <div class='logo-image'> <img class='img_sedona_logo' src='img/sedona-logo.jpg' width='1200' height='510' alt='Logo picture Sedona'> </div>
+        <div class='logo-image'> <img class='img_sedona_logo' src='img/sedona-logo.jpg' width='1200' height='510' alt='Logo picture Sedona'>
+        </div>
     </header>
     <main class='container'>
         <h1 class='visually-hidden'>HTML Sedona</h1>
@@ -94,10 +95,10 @@
                     <p class='text-data'>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 </div>
             </div>
-            <div class='search-data-button js-open-modal' id='button-search-sedona'><a href='./form.html'>Поиск гостинницы в Седоне</a></div>
+            <button class='search-data-button js-open-modal' id='button-search-sedona'><a href='./index.html'>Поиск гостинницы в Седоне</a></button>
         </section>
     </main>
-    <div class='modal-block'>
+    <div class='modal-block js-modal-show'>
         <form action='https://echo.htmlacademy.ru' method='post'>
             <div class='departure-block'>
                 <label class='departure-label' for='departure-in'>Дата заезда:</label>
@@ -105,8 +106,7 @@
                     <input class='departure-input' value='24 апреля 2017' type='text' name='departure-in' id='departure-in' placeholder='24 апреля 2017'>
                     <svg class='calendar calendar-1' xmlns='http://www.w3.org/2000/svg' width='21' height='22' viewBox='0 0 21 22'>
                         <path class='calendar-path' fill='#cacaca' d='M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z' />
-                        <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z' />
-                    </svg> <span class='visually-hidden'>календарь</span> </div>
+                        <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z' /> </svg> <span class='visually-hidden'>календарь</span> </div>
             </div>
             <div class='departure-block'>
                 <label class='departure-label' for='departure-out'>Дата выезда:</label>
@@ -114,8 +114,7 @@
                     <input class='departure-input' value='4 июля 2017' type='text' name='departure-out' id='departure-out' placeholder='4 июля 2017'>
                     <svg class='calendar calendar-2' xmlns='http://www.w3.org/2000/svg' width='21' height='22' viewBox='0 0 21 22'>
                         <path class='calendar-path' fill='#cacaca' d='M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z' />
-                        <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z' />
-                    </svg> <span class='visually-hidden'>календарь</span> </div>
+                        <path fill='#cacaca' d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z' /> </svg> <span class='visually-hidden'>календарь</span> </div>
             </div>
             <div class='visitors-block'>
                 <div class='adult-block'>
@@ -171,7 +170,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="js/script.min.js"></script>
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
 </body>
 
 </html>
