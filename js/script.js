@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+	
+>>>>>>> f4c769357c9f452fac54a9e3805d4383551d5cb4
 	  var popup=document.querySelector('.modal-block');
 	  var button_open=document.querySelector('.search-data-button');
       var adult_mb=popup.querySelector('[name=adult]');
